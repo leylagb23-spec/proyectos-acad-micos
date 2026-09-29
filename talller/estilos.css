@@ -1,0 +1,176 @@
+/* =====================================================
+   ESTILOS GENERALES - TALLER DE ELECTRODOMÉSTICOS
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #2c3e50;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 50px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin: 10px 0 15px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 30px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #dfe6ec;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Menú de navegación ---------- */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    background: #2c3e50;
+    border-radius: 8px;
+    padding: 6px;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    color: #ecf0f1;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background: #3d566e;
+    text-decoration: none;
+}
+
+.menu a.activo {
+    background: #3498db;
+    color: #fff;
+}
+
+/* ---------- Mensajes de aviso ---------- */
+.mensaje {
+    background: #eaf4fd;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin: 10px 0 15px;
+}
+
+/* ---------- Formularios ---------- */
+body > form {
+    background: #fff;
+    border: 1px solid #dfe6ec;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+body > form p {
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    font: inherit;
+    padding: 6px 8px;
+    margin: 2px 4px;
+    border: 1px solid #b8c4ce;
+    border-radius: 4px;
+    background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ---------- Botones ---------- */
+button {
+    font: inherit;
+    background: #3498db;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Botón "Desactivar" dentro de las tablas */
+td form button {
+    background: #c0392b;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+td form button:hover {
+    background: #a93226;
+}
+
+/* ---------- Tablas ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+th {
+    background: #2c3e50;
+    color: #fff;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid #dfe6ec;
+    padding: 9px 12px;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafb;
+}
+
+tr:hover td {
+    background: #eef5fb;
+}
+
+/* ---------- Listas (página de inicio) ---------- */
+ul {
+    background: #fff;
+    border: 1px solid #dfe6ec;
+    border-radius: 8px;
+    padding: 15px 20px 15px 40px;
+}
